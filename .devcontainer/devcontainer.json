@@ -1,0 +1,30 @@
+{
+  "name": "Java 25 + Angular 20",
+  "image": "mcr.microsoft.com/devcontainers/java:25-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    }
+  },
+  "postCreateCommand": "npm install -g @angular/cli@20",
+  "forwardPorts": [4200],
+  "portsAttributes": {
+    "4200": {
+      "label": "Angular App",
+      "onAutoForward": "notify",
+      "visibility": "public"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "java.import.gradle.java.home": "/opt/java/openjdk"
+      },
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "angular.ng-template"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
