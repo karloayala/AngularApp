@@ -1,0 +1,26 @@
+<div class="contenedor-tabla">
+  <h2 class="titulo-seccion">Catálogo de Productos</h2>
+  
+  <table class="tabla-productos">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Producto</th>
+        <th>Categoría</th>
+        <th>Precio</th>
+        <th>Stock</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (producto of listaProductos; track producto.id) {
+        <tr>
+          <td>{{ producto.id }}</td>
+          <td>{{ producto.nombre }}</td>
+          <td>{{ producto.categoria }}</td>
+          <td>{{ producto.precio | currency:'PEN':'symbol':'1.2-2' }}</td>
+          <td>{{ producto.stock }} u.</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

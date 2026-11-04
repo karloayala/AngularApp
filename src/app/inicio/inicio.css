@@ -1,0 +1,46 @@
+.contenedor-inicio {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc; /* Fondo gris sutil a juego con la tabla */
+  padding: 20px;
+}
+
+.tarjeta-bienvenida {
+  background-color: #ffffff;
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+  text-align: center;
+  border: 1px solid #e2e8f0;
+}
+
+h1 {
+  color: #0f172a;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.boton-ingresar {
+  background-color: #0f172a; /* Color oscuro profesional */
+  color: #ffffff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.boton-ingresar:hover {
+  background-color: #1e293b;
+  transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
